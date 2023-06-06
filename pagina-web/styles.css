@@ -274,6 +274,99 @@ section{
     margin-right: 25px; 
 }
 
+
+.acerca{
+    background-color: #189CAB;
+    padding-top: 3%;
+    padding-right: 20%;
+    padding-left: 20%;
+    position: relative; 
+    
+}
+
+.espiral{
+    position: absolute;
+    left: 0;
+    margin-top: 20%;
+}
+
+.union{
+    position: relative;
+    right: 10%;
+}
+
+.acerca_de, .info {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.acerca_de h1{
+    position: relative;
+    font-size: 50px;
+    margin-bottom: 4%;
+    right: 25%;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: #EBE3CC;
+}
+
+.info {
+    position: absolute;
+    top: 12%;
+    right: 0;
+    width: 80;
+    margin-right: 6%;
+}
+
+.info h1{
+    position: relative;
+    font-size: 40px;
+    color:#EBE3CC;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    float: right;
+    text-align: center;
+}
+
+.mas{
+    position: absolute;
+    top: 30%;
+    right: 0;
+    width: 80;
+    margin-right: 5%; 
+}
+
+.mas p{
+    position: relative;
+    font-size: 23px;
+    color:#EBE3CC;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    float: right;
+    text-align: justify;
+    line-height: 1.8;
+}
+
+.mas a{
+    font-size: 20px;
+    color: #FFFFFF;
+    border-radius: 20px 20px 20px 20px;
+    border-style: solid;
+    border-width: 3px;
+    background-color:#062D3E;
+    border-color: #062D3E;
+    padding: 10px;
+    margin-top: 5%;
+    margin-right: 65%;
+    float: right;
+}
+
+.garra{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
 .servicios h2{
     display: flex;
     justify-content: center;
@@ -362,7 +455,6 @@ section{
     padding: 20px;
 }
 
-
 @media (max-width: 1280px){
     header{
         padding: 14px 2%;
@@ -384,7 +476,18 @@ section{
         background: none;
     }
 
+    .union img{
+        display: none;
+    }
 
+    .garra img{
+        display: none;
+    }
+
+    .acerca{
+        width: auto;
+        height: 500px;
+    }
 }
 
 @media (max-width: 1090px){
@@ -438,23 +541,30 @@ section{
 
     .home{
         background-color: var(--bg-color);
-    }
-    
+    } 
 }
 
 @media (max-width: 656px){
     .home{
         padding: 5px 0;
     }
-    
+}
+
+@media (max-width: 780px){
+
     .personas img{
         display: none;
     }
-   
+    .espiral{
+        transition: all .50s ease;
+        display: none;
+    }
+}
+
+@media (max-width: 700px){ 
     .pet_friends img{
         display: none;
     }
-
     .sobre-cuidadores, .sobre-paseadores{
         height: 380px;
     }

@@ -196,8 +196,6 @@ section{
     padding: 10px;
 }
 
-
-
 .friends{
     background-color: #ED5C01;
     position: relative;
@@ -333,7 +331,8 @@ section{
     top: 30%;
     right: 0;
     width: 80;
-    margin-right: 5%; 
+    margin-left: 20%; 
+    margin-right: 3%;
 }
 
 .mas p{
@@ -455,6 +454,100 @@ section{
     padding: 20px;
 }
 
+.registrate {
+    display: flex;
+    padding: 0;
+}
+  
+.container_perro {
+    flex: 1;
+    bottom: 0;
+    padding-bottom: 0;
+    padding-top: 20px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    max-width: 50%;
+    position: relative;
+}
+
+.container_perro a {
+    display: flex;
+    align-items: flex-end;
+}
+
+.perrito img{
+    width: 140%;
+    height: auto;
+}
+
+.perrito1 img{
+    width: 85%;
+    height: auto;
+}
+
+.perrito2 img{
+    width: 55%;
+    height: auto;
+}
+
+.container_perro a:not(:last-child) {
+    margin-right: 15px; 
+    margin-left: 40px; 
+}
+  
+.yellow-bg {
+    background-color: #FBBD08;
+}
+
+.registro {
+    flex: 1;
+}
+
+.registro h3{
+    position: relative;
+    font-size: 20px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    color: #062D3E;
+    top: 30px;
+    margin-left: 10%;
+    line-height: 2; 
+}
+
+.registro a{
+    position: absolute;
+    font-size: 15px;
+    color: #FFFFFF;
+    border-radius: 20px 20px 20px 20px;
+    border-style: solid;
+    border-width: 3px;
+    background-color:#062D3E;
+    border-color: #062D3E;
+    padding: 10px;
+    margin-top: 3%;
+    margin-left: 5%;
+    float: right;
+}
+  
+.orange-bg {
+    background-color: #ED5C01;
+}
+  
+@media (max-width: 1310px) {
+    .union img{
+        display: none;
+    }
+
+    .acerca{
+        width: auto;
+        height: 700px;
+    }
+
+    .acerca_de h1{
+        display: none;
+    }
+  
 /*reseñas*/
 .resenias{
     height: 100vh;
@@ -579,18 +672,6 @@ section{
         background: none;
     }
 
-    .union img{
-        display: none;
-    }
-
-    .garra img{
-        display: none;
-    }
-
-    .acerca{
-        width: auto;
-        height: 500px;
-    }
 }
 
 @media (max-width: 1090px){
@@ -651,6 +732,23 @@ section{
     .home{
         padding: 5px 0;
     }
+    
+}
+
+@media (max-width: 800px){
+    .mas br {
+        display: none;
+    }
+
+    .mas{
+        position: absolute;
+        top: 40%;
+        right: 0;
+        width: 80;
+        margin-left: 5%; 
+        margin-right: 3%;
+    }
+  
     .user-img img{
         display: none;
     }
@@ -671,6 +769,7 @@ section{
     .btn-desplazar{
         bottom: 50px;
     }
+
 }
 
 @media (max-width: 780px){
@@ -678,10 +777,11 @@ section{
     .personas img{
         display: none;
     }
-    .espiral{
+ 
+    .garra img{
         transition: all .50s ease;
-        display: none;
     }
+    
 }
 
 @media (max-width: 700px){ 
@@ -690,6 +790,10 @@ section{
     }
     .sobre-cuidadores, .sobre-paseadores{
         height: 380px;
+    }
+    .espiral img {
+        transition: all .50s ease;
+        display: none;
     }
 }
 
@@ -721,4 +825,57 @@ section{
         transition: all .50s ease;
     }
 
+    .container_perro{
+        display: none;
+    }
+    
+}
+
+@media (max-width: 1100px){
+
+    .container_perro {
+        display: none;
+      }
+    
+    .yellow-bg {
+        display: none;
+    }
+
+    .registro {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px; /* Adjust the padding value as desired */
+      }
+      
+      .registro h3 {
+        position: relative;
+        font-size: 20px;
+        letter-spacing: 3px;
+        font-weight: bold;
+        color: #062D3E;
+        text-align: center;
+        margin-bottom: 20px; /* Add margin-bottom for spacing */
+      }
+      
+      .registro a {
+        position: relative;
+        font-size: 15px;
+        color: #FFFFFF;
+        border-radius: 20px;
+        border-style: solid;
+        border-width: 3px;
+        background-color: #062D3E;
+        border-color: #062D3E;
+        padding: 10px;
+        align-content: center ;
+        text-decoration: none;
+      }
+      
+      .orange-bg {
+        background-color: #ED5C01;
+      }
+      
 }

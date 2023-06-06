@@ -2,8 +2,11 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Josefin Sans', sans-serif;
     text-decoration: none;
+}
+
+body{
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 :root{
@@ -27,13 +30,20 @@ header{
     align-items: center;
     justify-content: space-between;
     background: transparent;
-    padding: 28px 12%;
+    padding: 10px 12%;
     transition: all .50s ease;
+    background: #189CAB;
+    box-shadow: 0 0 5px #EBE3CC;
 }
 
 .logo{
     display: flex;
     align-items: center;
+}
+
+.logo img{
+    width: 70px;
+    height: 70px;
 }
 
 .logo span{
@@ -264,6 +274,95 @@ section{
     margin-right: 25px; 
 }
 
+.servicios h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#062D3E;
+    font-size: 35px;
+}
+.sobre-servicios{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 60px 0;
+    gap: 60px;
+}
+
+.sobre-cuidadores, .sobre-paseadores{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: justify;
+    gap: 20px;
+    padding: 0 20px;
+    width: 500px;
+    height: 300px;
+    border-radius: 20px 20px 20px 20px;
+    border-style: solid;
+    
+    padding: 20px;
+    transition: 0.5s ease-in-out;
+}
+
+.sobre-paseadores{
+    background-color: #FBBD08;
+}
+
+.sobre-cuidadores{
+    border-color: #FBBD08;
+    border-width: 3px;
+}
+.sobre-cuidadores img, .sobre-paseadores img{
+    width: 80px;
+    height: 80px;
+    border-radius: 30px 30px 30px 30px;
+    border-style: solid;
+    padding: 20px 20px 20px 20px;
+}
+
+.sobre-cuidadores img{
+    background-color: #FBBD08;
+}
+
+.sobre-paseadores img{
+    background-color: #EBE3CC;
+}
+
+.servicio-icon{
+    display: flex;
+    align-items: center;
+}
+
+.servicio-icon span{
+    color:#062D3E;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding-left: 10%;
+}
+
+.sobre-cuidadores a{
+    border-radius: 10px 10px 10px 10px;
+    border-style: solid;
+    border-color: #062D3E;
+    border-width: 2px;
+    color: #062D3E;
+    padding: 20px;
+}
+
+.sobre-paseadores a{
+    border-radius: 10px 10px 10px 10px;
+    border-style: solid;
+    background: #062D3E;
+    color: #FFFFFF;
+    padding: 20px;
+}
+
+
 @media (max-width: 1280px){
     header{
         padding: 14px 2%;
@@ -354,6 +453,10 @@ section{
    
     .pet_friends img{
         display: none;
+    }
+
+    .sobre-cuidadores, .sobre-paseadores{
+        height: 380px;
     }
 }
 

@@ -71,8 +71,8 @@ header{
     color: var(--main-color);
 }
 
-.navbar a.active{
-    color: var(--main-color);
+.navbar .nav-active{
+    color: #FFFFFF;
 }
 
 .main{

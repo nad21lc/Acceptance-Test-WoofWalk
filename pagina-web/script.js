@@ -1,9 +1,37 @@
+//header
 let menu = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
 
 menu.onclick = () => {
     menu.classList.toggle('bx-x');
     navbar.classList.toggle('open');
+}
+
+let btnSeccion = document.querySelectorAll('.btn-nav');
+
+btnSeccion[0].onclick = function(){
+    for(i=0; i<4; i++){
+        btnSeccion[i].classList.remove("nav-active");
+    }
+    this.classList.add("nav-active");
+}
+btnSeccion[1].onclick = function(){
+    for(i=0; i<4; i++){
+        btnSeccion[i].classList.remove("nav-active");
+    }
+    this.classList.add("nav-active");
+}
+btnSeccion[2].onclick = function(){
+    for(i=0; i<4; i++){
+        btnSeccion[i].classList.remove("nav-active");
+    }
+    this.classList.add("nav-active");
+}
+btnSeccion[3].onclick = function(){
+    for(i=0; i<4; i++){
+        btnSeccion[i].classList.remove("nav-active");
+    }
+    this.classList.add("nav-active");
 }
 
 //login desde el landing page

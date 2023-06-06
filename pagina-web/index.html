@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WoofWalk!</title>
+    <link rel="icon" href="imagenes/logo.ico">
     <!--hoja que resetea estilos-->
     <link rel="stylesheet" href="reset.css">
     <!--mi hoja de css-->
@@ -17,7 +18,7 @@
     <!--josefine-sans-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
     <!--antic-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,13 +31,13 @@
 
         <ul class="navbar">
             <li><a href="#" class="active">Acerca</a></li>
-            <li><a href="#">Nuestro Servicio</a></li>
+            <li><a href="#servicios">Nuestro Servicio</a></li>
             <li><a href="#">Reseñas</a></li>
             <li><a href="#">Contacto</a></li>
         </ul>
 
         <div class="main">
-            <a href="login.html" target="_blank" class="usser"><i class="ri-user-fill"></i>Iniciar Sesión</a>
+            <a href="login.html" class="usser"><i class="ri-user-fill"></i>Iniciar Sesión</a>
             <a href="#">Registrarse</a>
             <div class="bx bx-menu" id="menu-icon"></div>
         </div>
@@ -54,7 +55,7 @@
             </div>
         </div>
     </section>
-
+    <!-- pet friends seccion-->
     <section class="friends" id="friends">
         <div class="container_izq">
            <div class="collar">
@@ -87,7 +88,40 @@
            </div>
         </div>
        </section>
-
+    <!-- Nuestra servicio-->
+    <section class="servicios" id="servicios">
+        <h2>Nuestro Servicio</h2>
+        <div class="sobre-servicios">
+            <div class="sobre-paseadores">
+                <div class="servicio-icon">
+                    <img src="imagenes/paseadores-icon.png" alt="Logo-WoofWalk">
+                    <span>Paseadores</span>
+                </div>
+                <div class="servicio-text">
+                    <p>Nuestros paseadores estarán disponibles para sacar 
+                    a tu perro a pasear en los horarios y días que mejor
+                    se adapten a tus necesidades y las de tu mascota. 
+                    Ya sea que necesites un paseo diario o esporádico,
+                    nuestros paseadores estarán ahí para asegurarse de
+                    que tu perro reciba el ejercicio y la atención que
+                    necesita para mantenerse feliz y saludable</p>
+                </div>
+                <a href="login.html">Explora</a>
+            </div> 
+            <div class="sobre-cuidadores">
+                <div class="servicio-icon">
+                    <img src="imagenes/cuidadores-icon.png" alt="Logo-WoofWalk">
+                    <span>Cuidadores</span>
+                </div>
+                <div class="servicio-text">
+                    <p>Nuestros cuidadores de mascotas están altamente 
+                    capacitados para brindar el mejor cuidado posible 
+                    a tu mascota.</p>
+                </div>
+                <a href="login.html">Explora</a>
+            </div>   
+        </div>
+    </section>
     <!----Java script-->
     <script type="text/javascript" src="script.js"></script>
 </body>

@@ -547,6 +547,108 @@ section{
     .acerca_de h1{
         display: none;
     }
+  
+/*reseñas*/
+.resenias{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    
+}
+
+.resenias h1{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 40px;
+    color: #062D3E;
+}
+
+.fila-resenias-slide{
+    display: flex;
+    width: 3200px;
+    transition: 0.45s;
+}
+
+.columna-slide{
+    width: 800px;
+    height: 400px;
+    position: relative;
+}
+
+.user-img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+}
+
+.user-img img{
+    height: 100%;
+    border-radius: 20px;
+    border-color: #000000;
+    border-width: 3px;
+    border-style: dashed;
+}
+.user-text{
+    background: #FBBD08;
+    width: 520px;
+    height: 270px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 10px;
+    color: #062D3E;
+    padding: 45px;
+    box-sizing: border-box;
+    z-index: 2;
+}
+
+.user-text p{
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.user-text h3{
+    margin: 35px 0 5px;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.contenedor-resenias{
+    width: 800px;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn-desplazar{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -50px;
+}
+
+.btn{
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    margin: 4px;
+    border-radius: 15px;
+    background: #FFFFFF;
+    cursor: pointer;
+}
+
+.active{
+    width: 45px;
+}
+
+.testimonios{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
 
 @media (max-width: 1280px){
@@ -646,9 +748,28 @@ section{
         margin-left: 5%; 
         margin-right: 3%;
     }
+  
+    .user-img img{
+        display: none;
+    }
+    .contenedor-resenias{
+        width: 100%;
+        height: 500px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .contenedor-resenias p{
+        font-size: 14px;
+    }
+    .user-text{
+        width: 55%;
+    }
+    .btn-desplazar{
+        bottom: 50px;
+    }
 
-    
-    
 }
 
 @media (max-width: 780px){
@@ -689,7 +810,7 @@ section{
     .persona1{
         margin-right: 10%;
     }
-   
+
     .pet_friends{
         position: absolute;
         transition: all .50s ease;

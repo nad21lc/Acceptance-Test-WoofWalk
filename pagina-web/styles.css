@@ -206,7 +206,7 @@ section{
     position: relative;
 }
 
-.container_izq {
+.container_left {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -219,13 +219,13 @@ section{
     left: 0;
 }
 
-.usuarios{
+.users{
     position: absolute;
     top: 10px;
     left: 75px;
 }
 
-.container_drch {
+.container_right {
     display: flex;
     align-items: center;
 }
@@ -277,8 +277,8 @@ section{
     margin-right: 25px; 
 }
 
-/**acerca de**/
-.acerca{
+/**about the**/
+.about{
     background-color: #189CAB;
     padding-top: 3%;
     padding-right: 20%;
@@ -286,7 +286,7 @@ section{
     position: relative; 
 }
 
-.espiral{
+.spiral{
     position: absolute;
     left: 0;
     margin-top: 20%;
@@ -297,12 +297,12 @@ section{
     right: 10%;
 }
 
-.acerca_de, .info {
+.about_the, .info {
     display: inline-block;
     vertical-align: top;
 }
 
-.acerca_de h1{
+.about_the h1{
     position: relative;
     font-size: 50px;
     margin-bottom: 4%;
@@ -330,7 +330,7 @@ section{
     text-align: center;
 }
 
-.mas{
+.more{
     position: absolute;
     top: 30%;
     right: 0;
@@ -339,7 +339,7 @@ section{
     margin-right: 3%;
 }
 
-.mas p{
+.more p{
     position: relative;
     font-size: 23px;
     color:#EBE3CC;
@@ -350,7 +350,7 @@ section{
     line-height: 1.8;
 }
 
-.mas a{
+.more a{
     font-size: 20px;
     color: #FFFFFF;
     border-radius: 20px 20px 20px 20px;
@@ -364,7 +364,7 @@ section{
     float: right;
 }
 
-.garra{
+.claw{
     position: absolute;
     bottom: 0;
     right: 0;
@@ -565,9 +565,11 @@ section{
 .registrate {
     display: flex;
     padding: 0;
+    width: auto;
+    height: 300px;
 }
 
-.container_perro {
+.container_dog {
     flex: 1;
     bottom: 0;
     padding-bottom: 0;
@@ -579,27 +581,27 @@ section{
     position: relative;
 }
 
-.container_perro a {
+.container_dog a {
     display: flex;
     align-items: flex-end;
 }
 
-.perrito img{
-    width: 140%;
+.dog img{
+    width: 200%;
     height: auto;
 }
 
-.perrito1 img{
-    width: 85%;
+.dog1 img{
+    width: 120%;
     height: auto;
 }
 
-.perrito2 img{
-    width: 55%;
+.dog2 img{
+    width: 80%;
     height: auto;
 }
 
-.container_perro a:not(:last-child) {
+.container_dog a:not(:last-child) {
     margin-right: 15px; 
     margin-left: 40px; 
 }
@@ -608,11 +610,11 @@ section{
     background-color: #FBBD08;
 }
 
-.registro {
+.register {
     flex: 1;
 }
 
-.registro h3{
+.register h3{
     position: relative;
     font-size: 20px;
     letter-spacing: 3px;
@@ -623,7 +625,7 @@ section{
     line-height: 2; 
 }
 
-.registro a{
+.register a{
     position: absolute;
     font-size: 15px;
     color: #FFFFFF;
@@ -642,18 +644,121 @@ section{
     background-color: #ED5C01;
 }
 
+/*footer section*/
+footer{
+    position: relative;
+    width: 100%;
+    background-color: #062D3E;
+    min-height: 100px;
+    padding: 10px 0px 10px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+ .social_icons, .menu{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.social_icons li a{
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+.social_icons li a:hover{
+    transform: translateY(-10px);
+}
+
+.menu li a{
+    color: #EBE3CC;
+    margin: 0 10px;
+    display: inline-block;
+    opacity: 0.75;
+}
+
+.menu li a:hover{
+    opacity: 1;
+}
+
+footer h4{
+    color: #EBE3CC;
+}
+
+.wave{
+    margin-top: 20px;
+    position: absolute;
+    top: -80px;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: url(imagenes/wave.png);
+    background-size: 1000px 100px;
+}
+
+footer .wave#wave1 {
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWave 4s linear infinite;
+}
+
+footer .wave#wave2 {
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animateWave_02 4s linear infinite;
+}
+
+footer .wave#wave3 {
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animateWave 3s linear infinite;
+}
+
+footer .wave#wave4 {
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 10px;
+    animation: animateWave_02 3s linear infinite;
+}
+
+@keyframes animateWave {
+    0%{
+        background-position-x: 1000px;
+    }
+    100%{
+        background-position-x: 0px;
+    }
+}
+
+@keyframes animateWave_02 {
+    0%{
+        background-position-x: 0px;
+    }
+    100%{
+        background-position-x: 1000px;
+    }
+}
+
 /*responsive*/
 @media (max-width: 1310px) {
     .union img{
         display: none;
     }
 
-    .acerca{
+    .about{
         width: auto;
         height: 700px;
     }
 
-    .acerca_de h1{
+    .about_the h1{
         display: none;
     }
 }
@@ -683,11 +788,7 @@ section{
         display: none;
     }
 
-    .garra img{
-        display: none;
-    }
-
-    .acerca{
+    .about{
         width: auto;
         height: 500px;
     }
@@ -788,16 +889,16 @@ section{
     .btn-desplazar{
         bottom: 50px;
     }
-    .acerca{
+    .about{
         height: 700px;
     }
 }
 
 @media (max-width: 800px){
-    .mas br {
+    .more br {
         display: none;
     }
-    .mas{
+    .more{
         position: absolute;
         top: 40%;
         right: 0;
@@ -812,7 +913,7 @@ section{
         display: none;
     }
 
-    .garra img{
+    .claw img{
         transition: all .50s ease;
     }
 }
@@ -824,7 +925,7 @@ section{
     .sobre-cuidadores, .sobre-paseadores{
         height: 380px;
     }
-    .espiral img {
+    .spiral img {
         transition: all .50s ease;
         display: none;
     }
@@ -857,7 +958,7 @@ section{
         transition: all .50s ease;
     }
 
-    .container_perro{
+    .container_dog{
         display: none;
     }
     
@@ -865,7 +966,7 @@ section{
         display: none;
     }
 
-    .registro {
+    .register {
         flex: 1;
         display: flex;
         flex-direction: column;
@@ -874,7 +975,7 @@ section{
         padding: 20px; /* Adjust the padding value as desired */
     }
 
-    .registro h3 {
+    .register h3 {
         position: relative;
         font-size: 20px;
         letter-spacing: 3px;
@@ -884,7 +985,7 @@ section{
         margin-bottom: 20px; /* Add margin-bottom for spacing */
     }
 
-    .registro a {
+    .register a {
         position: relative;
         font-size: 15px;
         color: #FFFFFF;

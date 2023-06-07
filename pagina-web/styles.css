@@ -752,6 +752,10 @@ section{
         padding: 5px 5px; 
     }
 
+    .logo img{
+        display: none;
+    }
+
     .home-text h1{
         font-size: 55px;
     }

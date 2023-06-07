@@ -119,7 +119,7 @@ header{
 
 /**seccion**/
 section{
-    padding: 120px 19%;
+    padding: 120px 5%;
 }
 
 /**seccion home**/
@@ -284,7 +284,6 @@ section{
     padding-right: 20%;
     padding-left: 20%;
     position: relative; 
-    
 }
 
 .espiral{
@@ -403,8 +402,6 @@ section{
     height: 300px;
     border-radius: 20px 20px 20px 20px;
     border-style: solid;
-    
-    padding: 20px;
     transition: 0.5s ease-in-out;
 }
 
@@ -752,11 +749,24 @@ section{
 
 @media (max-width: 656px){
     .home{
-        padding: 5px 0;
+        padding: 5px 5px; 
     }
+
+    .home-text h1{
+        font-size: 55px;
+    }
+
+    .home-atajos h4{
+        font-size: 20px;
+    }
+    .home-atajos a{
+        font-size: 20px;
+    }
+
     .user-img img{
         display: none;
     }
+
     .contenedor-resenias{
         width: 100%;
         height: 500px;
@@ -773,6 +783,9 @@ section{
     }
     .btn-desplazar{
         bottom: 50px;
+    }
+    .acerca{
+        height: 700px;
     }
 }
 

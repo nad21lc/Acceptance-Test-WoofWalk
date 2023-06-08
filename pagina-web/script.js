@@ -7,29 +7,29 @@ menu.onclick = () => {
     navbar.classList.toggle('open');
 }
 
-let btnSeccion = document.querySelectorAll('.btn-nav');
+let sectionBtn = document.querySelectorAll('.btn-nav');
 
-btnSeccion[0].onclick = function(){
+sectionBtn[0].onclick = function(){
     for(i=0; i<4; i++){
-        btnSeccion[i].classList.remove("nav-active");
+        sectionBtn[i].classList.remove("nav-active");
     }
     this.classList.add("nav-active");
 }
-btnSeccion[1].onclick = function(){
+sectionBtn[1].onclick = function(){
     for(i=0; i<4; i++){
-        btnSeccion[i].classList.remove("nav-active");
+        sectionBtn[i].classList.remove("nav-active");
     }
     this.classList.add("nav-active");
 }
-btnSeccion[2].onclick = function(){
+sectionBtn[2].onclick = function(){
     for(i=0; i<4; i++){
-        btnSeccion[i].classList.remove("nav-active");
+        sectionBtn[i].classList.remove("nav-active");
     }
     this.classList.add("nav-active");
 }
-btnSeccion[3].onclick = function(){
+sectionBtn[3].onclick = function(){
     for(i=0; i<4; i++){
-        btnSeccion[i].classList.remove("nav-active");
+        sectionBtn[i].classList.remove("nav-active");
     }
     this.classList.add("nav-active");
 }
@@ -38,8 +38,8 @@ btnSeccion[3].onclick = function(){
 function login(){
     var user, password;
 
-    user = document.getElementById("usuario").value;
-    password = document.getElementById("contrasenia").value;
+    user = document.getElementById("user").value;
+    password = document.getElementById("password").value;
 
     if(user == "hola" && password == "1234"){
         alert("Hola de nuevo! :)");

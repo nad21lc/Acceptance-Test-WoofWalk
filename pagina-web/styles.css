@@ -150,6 +150,7 @@ section{
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 125% center;
+    pointer-events: none; /*especifica que mis modificaciones no deben afectar a los eventos del mouse*/
 }
 
 .home::after {
@@ -163,6 +164,7 @@ section{
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 90% center;
+    pointer-events: none;
 }
 
 .home-text h1{
@@ -177,19 +179,19 @@ section{
     color: #FBBD08;
 }
 
-.home-atajos {
+.home-shortcuts {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
 }
 
-.home-atajos h4{
+.home-shortcuts h4{
     color: #189CAB;
     font-size: 24px;
 }
 
-.home-atajos a{
+.home-shortcuts a{
     font-size: 24px;
     color: #FFFFFF;
     border-radius: 20px 20px 20px 20px;
@@ -230,7 +232,7 @@ section{
     align-items: center;
 }
 
-.personas {
+.people {
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -245,7 +247,7 @@ section{
     left: 43%;
 }
 
-.personas_2 {
+.people_2 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -370,16 +372,16 @@ section{
     right: 0;
 }
 
-/*sección servicios*/
+/*sección services*/
 
-.servicios h2{
+.services h2{
     display: flex;
     justify-content: center;
     align-items: center;
     color:#062D3E;
     font-size: 35px;
 }
-.sobre-servicios{
+.about-services{
     position: relative;
     display: flex;
     justify-content: center;
@@ -389,7 +391,7 @@ section{
     gap: 60px;
 }
 
-.sobre-cuidadores, .sobre-paseadores{
+.about-caretakers, .about-dog-walkers{
     position: relative;
     display: flex;
     justify-content: center;
@@ -405,15 +407,15 @@ section{
     transition: 0.5s ease-in-out;
 }
 
-.sobre-paseadores{
+.about-dog-walkers{
     background-color: #FBBD08;
 }
 
-.sobre-cuidadores{
+.about-caretakers{
     border-color: #FBBD08;
     border-width: 3px;
 }
-.sobre-cuidadores img, .sobre-paseadores img{
+.about-caretakers img, .about-dog-walkers img{
     width: 80px;
     height: 80px;
     border-radius: 30px 30px 30px 30px;
@@ -421,27 +423,27 @@ section{
     padding: 20px 20px 20px 20px;
 }
 
-.sobre-cuidadores img{
+.about-caretakers img{
     background-color: #FBBD08;
 }
 
-.sobre-paseadores img{
+.about-dog-walkers img{
     background-color: #EBE3CC;
 }
 
-.servicio-icon{
+.service-icon{
     display: flex;
     align-items: center;
 }
 
-.servicio-icon span{
+.service-icon span{
     color:#062D3E;
     font-size: 1.1rem;
     font-weight: 600;
     padding-left: 10%;
 }
 
-.sobre-cuidadores a{
+.about-caretakers a{
     border-radius: 10px 10px 10px 10px;
     border-style: solid;
     border-color: #062D3E;
@@ -450,7 +452,7 @@ section{
     padding: 20px;
 }
 
-.sobre-paseadores a{
+.about-dog-walkers a{
     border-radius: 10px 10px 10px 10px;
     border-style: solid;
     background: #062D3E;
@@ -459,27 +461,27 @@ section{
 }
 
 /*reseñas*/
-.resenias{
+.reviews{
     height: 100vh;
     width: 100%;
     position: relative;
     
 }
 
-.resenias h1{
+.reviews h1{
     text-align: center;
     padding-top: 20px;
     font-size: 40px;
     color: #062D3E;
 }
 
-.fila-resenias-slide{
+.review-slide-row{
     display: flex;
     width: 3200px;
     transition: 0.45s;
 }
 
-.columna-slide{
+.slide-column{
     width: 800px;
     height: 400px;
     position: relative;
@@ -525,7 +527,7 @@ section{
     font-weight: bold;
 }
 
-.contenedor-resenias{
+.reviews-container{
     width: 800px;
     height: 400px;
     position: absolute;
@@ -534,7 +536,7 @@ section{
     transform: translate(-50%, -50%);
 }
 
-.btn-desplazar{
+.scroll-button{
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -555,14 +557,14 @@ section{
     width: 45px;
 }
 
-.testimonios{
+.testimonials{
     width: 100%;
     height: 100%;
     overflow: hidden;
 }
 
-/*sección registrate*/
-.registrate {
+/*sección sing-up*/
+.sing-up {
     display: flex;
     padding: 0;
     width: auto;
@@ -657,7 +659,7 @@ footer{
     flex-direction: column;
 }
 
- .social_icons, .menu{
+.social_icons, .menu{
     position: relative;
     display: flex;
     justify-content: center;
@@ -861,10 +863,10 @@ footer .wave#wave4 {
         font-size: 55px;
     }
 
-    .home-atajos h4{
+    .home-shortcuts h4{
         font-size: 20px;
     }
-    .home-atajos a{
+    .home-shortcuts a{
         font-size: 20px;
     }
 
@@ -872,7 +874,7 @@ footer .wave#wave4 {
         display: none;
     }
 
-    .contenedor-resenias{
+    .reviews-container{
         width: 100%;
         height: 500px;
         position: absolute;
@@ -880,13 +882,13 @@ footer .wave#wave4 {
         left: 50%;
         transform: translate(-50%, -50%);
     }
-    .contenedor-resenias p{
+    .reviews-container p{
         font-size: 14px;
     }
     .user-text{
         width: 55%;
     }
-    .btn-desplazar{
+    .scroll-button{
         bottom: 50px;
     }
     .about{
@@ -909,7 +911,7 @@ footer .wave#wave4 {
 }
 
 @media (max-width: 780px){
-    .personas img{
+    .people img{
         display: none;
     }
 
@@ -922,7 +924,7 @@ footer .wave#wave4 {
     .pet_friends img{
         display: none;
     }
-    .sobre-cuidadores, .sobre-paseadores{
+    .about-caretakers, .about-dog-walkers{
         height: 380px;
     }
     .spiral img {
@@ -932,7 +934,7 @@ footer .wave#wave4 {
 }
 
 @media (max-width: 1100px){
-    .personas{
+    .people{
         position: absolute;
         display: flex;
         flex-direction: row;
@@ -941,7 +943,7 @@ footer .wave#wave4 {
         transition: all .50s ease;
     }
 
-    .persona1{
+    .person1{
         margin-right: 10%;
     }
     .pet_friends{
@@ -953,7 +955,7 @@ footer .wave#wave4 {
         margin-left: 5%;
     }
 
-    .personas_2{
+    .people_2{
         display: none;
         transition: all .50s ease;
     }

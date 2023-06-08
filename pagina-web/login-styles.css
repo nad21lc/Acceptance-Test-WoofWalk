@@ -118,18 +118,18 @@ input[type="submit"]:hover{
     transition: .5s;
 }
 
-.recordar{
+.remember{
     margin: 30px 0;
     text-align: center;
     font-size: 16px;
 }
 
-.recordar a{
+.remember a{
     color: #189CAB;
     text-decoration: none;
 }
 
-.recordar:hover{
+.remember:hover{
     text-decoration: underline;
 }
 
@@ -145,5 +145,5 @@ input[type="submit"]:hover{
 }
 
 .register a:hover{
-  text-decoration: underline;
+    text-decoration: underline;
 }

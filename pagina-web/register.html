@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+    <link rel="icon" href="imagenes/logo.ico">
+    <link rel="stylesheet" href="register-styles.css">
+    <!--fuente-->
+    <!--josefine-sans-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
+    <!--antic-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Antic&family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--barra nav-->
+    <header>
+        <a href="index.html" class="logo"><img src="imagenes/logo.png" alt="Logo-WoofWalk"><span>WoofWalk!</span></a>
+    </header>
+
+    <div class="form-register">
+        <h1>Únete y empieza tu búsqueda</h1>
+        <form method="get">
+            <div class="username">
+                <input id="name" type="text" required>
+                <label>Nombre</label>
+            </div>
+            <div class="username">
+                <input id="user" type="text" required>
+                <label>Nombre de usuario</label>
+            </div>
+            <div class="username">
+                <input id="email" type="text" required>
+                <label>Email</label>
+            </div>
+            <div class="username">
+                <input id="DNI" type="number" required>
+                <label>DNI</label>
+            </div>
+            <div class="username">
+                <input id="password" type="password" required>
+                <label>Contraseña</label>
+            </div>
+            <div class="username">
+            <input id="password" type="password" required>
+            <label>Confirmar Contraseña</label>
+             </div>
+             <div class="username">
+                <input id="celular" type="number" required>
+                <label>Teléfono</label>
+                 </div>
+
+            <div class="terms">
+            <input id = "checkbox" type="checkbox" required>
+            <label>Acepto las Condiciones de servicio y la Política de privacidad </label>
+            </div>
+            <input type="submit" value="Crear Cuenta" onclick="Register()">
+        </div>
+        </form>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

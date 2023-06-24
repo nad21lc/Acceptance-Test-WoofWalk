@@ -185,6 +185,12 @@ body {
     cursor: pointer;
 }
 
+.seccion-perfil-usuario .perfil-usuario-avatar .icon-image {
+    width: auto;
+    margin-top: 29%;
+    margin-left: 32%;
+}
+
 .seccion-perfil-usuario .perfil-usuario-body {
     width: 70%;
     position: relative;

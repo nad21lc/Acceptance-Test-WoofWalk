@@ -127,15 +127,15 @@ body {
 
 
 /*seccion de perfil*/
-.seccion-perfil-usuario .perfil-usuario-body,
-.seccion-perfil-usuario {
+.user-profile-section .profile-user-body,
+.user-profile-section {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
 }
 
-.seccion-perfil-usuario .perfil-usuario-header {
+.user-profile-section .profile-user-header {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -143,7 +143,7 @@ body {
     margin-bottom: 1.25rem;
 }
 
-.seccion-perfil-usuario .perfil-usuario-portada {
+.user-profile-section .profile-user-frontpage {
     display: block;
     position: relative;
     width: 90%;
@@ -152,23 +152,7 @@ body {
     border-radius: 0 0 20px 20px;
 }
 
-.seccion-perfil-usuario .perfil-usuario-portada .boton-portada {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    border: 0;
-    border-radius: 8px;
-    padding: 12px 25px;
-    background-color: rgba(0, 0, 0, .5);
-    color: #fff;
-    cursor: pointer;
-}
-
-.seccion-perfil-usuario .perfil-usuario-portada .boton-portada i {
-    margin-right: 1rem;
-}
-
-.seccion-perfil-usuario .perfil-usuario-avatar {
+.user-profile-section .profile-user-avatar {
     display: flex;
     width: 180px;
     height: 180px;
@@ -184,14 +168,14 @@ body {
     z-index: 1;
 }
 
-.seccion-perfil-usuario .perfil-usuario-avatar img {
+.user-profile-section .profile-user-avatar img {
     width: 100%;
     height: 100%;
     position: relative;
     border-radius: 50%;
 }
 
-.seccion-perfil-usuario .perfil-usuario-avatar .boton-avatar {
+.user-profile-section .profile-user-avatar .boton-avatar {
     position: absolute;
     left: -2px;
     top: -2px;
@@ -204,26 +188,26 @@ body {
     cursor: pointer;
 }
 
-.seccion-perfil-usuario .perfil-usuario-body {
+.user-profile-section .profile-user-body {
     width: 70%;
     position: relative;
     max-width: 750px;
 }
 
-.seccion-perfil-usuario .perfil-usuario-body .titulo {
+.user-profile-section .profile-user-body .qualification {
     display: block;
     width: 100%;
     font-size: 1.75em;
     margin-bottom: 0.5rem;
 }
 
-.seccion-perfil-usuario .perfil-usuario-body .texto {
+.user-profile-section .profile-user-body .texto {
     color: #848484;
     font-size: 0.95em;
 }
 
-.seccion-perfil-usuario .perfil-usuario-footer,
-.seccion-perfil-usuario .perfil-usuario-bio {
+.user-profile-section .perfil-usuario-footer,
+.user-profile-section .profile-user-bio {
     display: flex;
     flex-wrap: wrap;
     padding: 1.5rem 2rem;
@@ -233,12 +217,37 @@ body {
     width: 100%;
 }
 
-.seccion-perfil-usuario .perfil-usuario-bio {
-    margin-bottom: 1.25rem;
+.user-profile-section .profile-user-bio {
     text-align: center;
     justify-content: center;
+    margin-bottom: 0.5rem;
 }
 
+.end-service{
+    text-align: center;
+    margin-top: 5px;
+    width: 100%;
+}
+
+.end-service p{
+    font-weight: bold;
+}
+.end-service a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 5px;
+    border-radius: 5px;
+    background: linear-gradient(70deg, #ED5C01, #d6b351);
+    color: #ffffff;
+    text-decoration: none;
+    animation: breathingAnimation 2s ease-in-out infinite;
+}
+
+@keyframes breathingAnimation {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
 
 /*mapa*/
 .map{

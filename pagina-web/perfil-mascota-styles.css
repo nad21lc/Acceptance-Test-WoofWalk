@@ -23,7 +23,7 @@ body {
     position: fixed;
     top: 20px;
     right: 30px;
-    z-index: 9999;
+    z-index: 8888;
 }
 
 .action .profile{
@@ -185,6 +185,12 @@ body {
     cursor: pointer;
 }
 
+.seccion-perfil-usuario .perfil-usuario-avatar .icon-image {
+    width: auto;
+    margin-top: 29%;
+    margin-left: 32%;
+}
+
 .seccion-perfil-usuario .perfil-usuario-body {
     width: 70%;
     position: relative;
@@ -301,13 +307,13 @@ body {
 }
 
 .gallery img{
-    width: 30%;
-    height: 15rem;
+    width: 180px;
+    height: 11.5rem;
     margin: 5px 5px 10px 10px;
     border-radius: 15px;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 1035px) {
 
     .seccion-perfil-usuario .perfil-usuario-portada,
     .seccion-perfil-usuario .perfil-usuario-body {
@@ -316,28 +322,55 @@ body {
 
     .seccion-perfil-usuario .redes-sociales {
         position: relative;
-        flex-direction: row;
-        width: 100%;
-        left: 0;
-        text-align: center;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
+        top: 0;
+        left: 120px;
+        display: flex;
         align-items: center;
-        justify-content: center
-    }
-
-    .seccion-perfil-usuario .redes-sociales .boton-redes+.boton-redes {
-        margin-left: 1rem;
+        justify-content: flex-start;
         margin-top: 0;
+        transform: translateY(-1600%);
     }
+       
 }
 
-.mensaje a {
-    color: inherit;
-    margin-right: .5rem;
-    display: inline-block;
+
+@media (max-width: 700px) {
+
+    .seccion-perfil-usuario .perfil-usuario-portada,
+    .seccion-perfil-usuario .perfil-usuario-body {
+        width: 95%;
+    }
+
+    .seccion-perfil-usuario .redes-sociales {
+        position: relative;
+        top: 0;
+        left: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-top: 0;
+        transform: translateY(-2000%);
+    }
+       
 }
-.mensaje a:hover {
-    color: #309B76;
-    transform: scale(1.4)
+
+@media (max-width: 609px) {
+
+    .seccion-perfil-usuario .perfil-usuario-portada,
+    .seccion-perfil-usuario .perfil-usuario-body {
+        width: 95%;
+    }
+
+    .seccion-perfil-usuario .redes-sociales {
+        position: relative;
+        top: 0;
+        left: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-top: 0;
+        transform: translateY(-2045%);
+    }
+       
 }
+

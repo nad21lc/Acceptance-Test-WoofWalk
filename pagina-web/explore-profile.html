@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://kit.fontawesome.com/c31ad76e82.js" crossorigin="anonymous"></script>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Explorar Perfiles</title>
+        <link rel="stylesheet" href="explore-profile.css">
+
+    </head>
+
+    <body>
+        <header class="action" onclick="menuToggle();">
+            <div class="profile">
+                <img src="imagenes/perfil-user-img.jpg" alt="img-user"> 
+            </div>
+            <div class="menu">
+                <h3>Rosario Salazar<br><span>Pet Lover</span></h3>
+                <ul>
+                    <li><img src="imagenes/perfil.png"><a href="#">Mi perfil</a></li>
+                    <li><img src="imagenes/buscar.png"><a href="#">Explorar perfiles</a></li>
+                    <li><img src="imagenes/personas.png"><a href="#">Mis paseadores y cuidadores</a></li>
+                    <li><img src="imagenes/log-out.png"><a href="#">Cerrar sesión</a></li>
+                </ul>
+            </div>
+        </header>
+        
+        <div class="container-search">
+            <div id="search-box">
+                <input type="text" id="search-input" placeholder="Buscar">
+                <button id="search">Search</i></button>
+            </div>
+
+            <div id="service-buttons">
+                <button class="button-value" onclick="filterWorker('Paseador')">Paseador</button>
+                <button class="button-value" onclick="filterWorker('Cuidador')">Cuidador</button>
+                <button class="button-value" onclick="filterWorker('Ambos')">Ambos</button>
+            </div>
+            <div id="workers"></div>
+        </div>
+        
+
+        <script src="explore-profile.js"></script>
+        <script type="text/javascript" src="scriptPage.js"></script>
+        
+    </body>
+</html>

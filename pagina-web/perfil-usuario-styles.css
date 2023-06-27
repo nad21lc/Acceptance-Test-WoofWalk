@@ -44,7 +44,7 @@ a {
 .header header{
     width: 100%;
     min-height: calc(100px + 15vw);
-    background-color: #317FFF;
+    background-color: #457fdde7;
 }
 
 .header .cols_container .left__col{

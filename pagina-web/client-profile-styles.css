@@ -42,9 +42,13 @@ a {
 }
 
 .header header{
+    display: block;
+    position: relative;
     width: 100%;
-    min-height: calc(100px + 15vw);
-    background-color: #457fdde7;
+    height: 17rem;
+    background-image: linear-gradient(45deg, #FFCF6F, #317FFF);
+    border-radius: 0 0 20px 20px;
+    margin-bottom: 2%;
 }
 
 .header .cols_container .left__col{
@@ -110,7 +114,7 @@ a {
     flex-direction: column;
 }
 
-.header .cols_container .left__col nav button{
+.header .cols_container .left__col nav a{
     background: #062D3E;
     color: #FFFFFF;
     border: none;
@@ -132,11 +136,16 @@ a {
     gap: 20px;
 }
 
+.header .cols_container .right__col {
+    margin-bottom: 10px;
+}
+
 .header .cols_container .right__col .Dog_Pic img{
     max-width: 100%;
     display: block;
     height: 100%;
     object-fit: cover;
+    border-radius: 10px;
 }
 
 @media (min-width: 868px){
@@ -169,7 +178,7 @@ a {
         flex-direction: row;
     }
 
-    .header .cols_container .right__col nav button{
+    .header .cols_container .right__col nav a{
         margin-top: 0;
     }
 }

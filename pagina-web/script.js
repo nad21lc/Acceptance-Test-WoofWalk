@@ -43,7 +43,7 @@ function login(){
 
     if(user == "hola" && password == "1234"){
         alert("Hola de nuevo! :)");
-        window.open("pagina.html"); 
+        window.open("explore-profile.html"); 
     }
     else{
         alert("Hay un error en su cuenta, intente de nuevo :/")

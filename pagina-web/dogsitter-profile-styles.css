@@ -28,7 +28,7 @@ body{
     font-family: "Poppins", sans-serif;
 }
 
-ul {
+.tags ul {
     list-style-type: none;
     margin: 0;
     padding: 0;

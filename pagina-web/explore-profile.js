@@ -1,7 +1,7 @@
 let workers = {
     data:[
     {
-        workerName: "Jose Guerrero",
+        workerName: "Esteban Quito",
         category: "Paseador",
         rate: "4 / 5",
         image: "imagenes/paseador1.jpg"
@@ -122,6 +122,7 @@ document.getElementById("search").addEventListener("click", () => {
         }
     })
 });
+
 
 window.onload = () => {
     filterWorker("Ambos");

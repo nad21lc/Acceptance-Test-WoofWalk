@@ -174,12 +174,13 @@ body {
 .card {
     background-color: #FFFFFF;
     max-width: 18em;
-    margin-top: 1em;
+    margin-top: 1.5em;
     padding: 1em;
     border-radius: 10px;
     box-shadow: 1em 2em 2.5em rgba(1, 2, 68, 0.08);
     position: relative;
     overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .card::before {
@@ -206,6 +207,10 @@ body {
     z-index: 1;
 }
 
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(255, 255, 0, 0.5);
+}
 
 #workers img{
     max-width: 100%;

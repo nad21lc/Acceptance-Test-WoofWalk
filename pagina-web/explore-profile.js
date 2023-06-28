@@ -127,3 +127,8 @@ document.getElementById("search").addEventListener("click", () => {
 window.onload = () => {
     filterWorker("Ambos");
 }
+
+
+document.getElementById("workers").addEventListener("click", () => {
+    window.open("dogsitter-profile.html");
+});

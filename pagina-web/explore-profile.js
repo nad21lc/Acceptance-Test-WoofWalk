@@ -130,5 +130,5 @@ window.onload = () => {
 
 
 document.getElementById("workers").addEventListener("click", () => {
-    window.open("dogsitter-profile.html");
+    window.open("dogsitter-profile.html", "_self");
 });

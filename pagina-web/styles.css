@@ -528,6 +528,7 @@ section{
 }
 
 .reviews-container{
+    margin-top: 50px;
     width: 800px;
     height: 400px;
     position: absolute;

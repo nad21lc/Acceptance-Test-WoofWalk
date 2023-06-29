@@ -16,7 +16,7 @@ html {
 
 body {
     color: #404040;
-    font-family: "Arial", Segoe UI, Tahoma, sans-serifl, Helvetica Neue, Helvetica;
+    font-family: "Josefin Sans", Segoe UI, Tahoma, sans-serif, Helvetica Neue, Helvetica;
 }
 
 body{
@@ -25,10 +25,10 @@ body{
     padding: 0;
     box-sizing: border-box;
     min-height: 100vh;
-    font-family: "Poppins", sans-serif;
+    font-family: "Josefin Sans", sans-serif;
 }
 
-.tags ul {
+.left__col .Tags ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -93,7 +93,13 @@ a {
 .header .cols_container .left__col .Tags{
     justify-content: space-between;
     position: relative;
-    margin: 35px 0;
+    margin: 25px 0;
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
 }
 
 .header .cols_container .left__col .Tags li{
@@ -110,7 +116,7 @@ a {
 .header .cols_container .left__col nav{
     display: flex;
     align-items: center;
-    padding: 30px 0;
+    padding: 15px 0;
     justify-content: space-between;
     flex-direction: column;
 }
